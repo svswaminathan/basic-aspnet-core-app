@@ -1,3 +1,5 @@
+#!/bin/sh
+
 result=$(docker ps -a | grep -c devcondemo)
 if [ ${result} = "1" ];
 then
