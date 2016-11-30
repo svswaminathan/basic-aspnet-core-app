@@ -1,6 +1,5 @@
 #!/bin/sh
-
-result=$(docker ps -a | grep -c devcondemo)
+result=$(docker ps -a | grep -c devcondemo);
 if [ ${result} = "1" ];
 then
 docker stop devcondemo;
